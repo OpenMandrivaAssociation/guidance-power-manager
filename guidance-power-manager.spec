@@ -12,6 +12,7 @@ BuildRequires:  kdebase4-workspace-devel
 BuildRequires:  automoc
 BuildRequires:  libxscrnsaver-devel
 BuildRequires:  python-devel
+BuildRequires:  python-sip
 
 Requires:       pm-utils
 Requires:       kdebase4-runtime
