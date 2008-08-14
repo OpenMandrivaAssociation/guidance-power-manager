@@ -11,6 +11,7 @@ Source0:        %{name}-%{version}.tar.bz2
 BuildRequires:  kdebase4-workspace-devel
 BuildRequires:  automoc
 BuildRequires:  libxscrnsaver-devel
+BuildRequires:  python-devel
 
 Requires:       pm-utils
 Requires:       kdebase4-runtime
