@@ -13,6 +13,8 @@ BuildRequires:  automoc
 BuildRequires:  libxscrnsaver-devel
 BuildRequires:  python-devel
 BuildRequires:  python-sip
+BuildRequires:  python-dbus
+BuildRequires:  python-kde4
 
 Requires:       pm-utils
 Requires:       kdebase4-runtime
