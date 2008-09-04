@@ -1,12 +1,12 @@
 Name:           guidance-power-manager
 Summary:        KDE power management applet
-Version:        4.1.0
+Version:        4.1.1
 Release:        %mkrel 1
 Url:            http://websvn.kde.org/trunk/extragear/utils/guidance-power-manager
-License:        GPL v2+
+License:        GPLv2+
 Group:          Graphical desktop/KDE
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
-Source0:        %{name}-%{version}.tar.bz2
+Source0:        http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%{name}-%{version}.tar.bz2
 
 BuildRequires:  kdebase4-workspace-devel
 BuildRequires:  automoc
