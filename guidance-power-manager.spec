@@ -1,7 +1,7 @@
 Name:           guidance-power-manager
 Summary:        KDE power management applet
 Version:        4.1.1
-Release:        %mkrel 1
+Release:        %mkrel 2
 Url:            http://websvn.kde.org/trunk/extragear/utils/guidance-power-manager
 License:        GPLv2+
 Group:          Graphical desktop/KDE
@@ -18,7 +18,9 @@ BuildRequires:  python-kde4
 
 Requires:       pm-utils
 Requires:       kdebase4-runtime
-Requires:       python
+Requires:       python-kde4
+Requires:	python-dbus
+
 %description
 The package provides battery monitoring and suspend/standby triggers.
 It is based on the powersave package and therefore supports APM and
