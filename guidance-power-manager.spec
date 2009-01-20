@@ -1,7 +1,7 @@
 Name:           guidance-power-manager
 Summary:        KDE power management applet
-Version:        4.1.1
-Release:        %mkrel 2
+Version:        4.1.96
+Release:        %mkrel 1
 Url:            http://websvn.kde.org/trunk/extragear/utils/guidance-power-manager
 License:        GPLv2+
 Group:          Graphical desktop/KDE
@@ -29,7 +29,6 @@ scaling(SpeedStep and PowerNow) and more
 
 %files
 %defattr(-,root,root) 
-#-f %name.lang
 %_kde_bindir/guidance-power-manager
 %py_platsitedir/ixf86misc.so
 %py_platsitedir/xf86misc.py
@@ -47,12 +46,7 @@ scaling(SpeedStep and PowerNow) and more
 %make
 
 %install
-pushd build
-make DESTDIR=%buildroot install
-popd
-
-# FIXME
-#%find_lang %{name} --with-html
+make -C build DESTDIR=%buildroot install
 
 %clean
 %{__rm} -rf "%{buildroot}"
