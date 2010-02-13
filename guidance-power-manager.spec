@@ -7,7 +7,7 @@ License:        GPLv2+
 Group:          Graphical desktop/KDE
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source0:        http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%{name}-%{version}.tar.bz2
-
+Patch0:		guidance-power-manager-4.4.0-linkage.patch
 BuildRequires:  libxscrnsaver-devel
 BuildRequires:	libxrandr-devel
 BuildRequires:  python-devel
@@ -39,6 +39,7 @@ scaling(SpeedStep and PowerNow) and more
 
 %prep
 %setup -q -n %name-%version
+%patch0 -p0
 
 %build
 %cmake_kde4
