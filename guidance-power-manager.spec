@@ -9,6 +9,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source0:        http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%{name}-%{version}.tar.bz2
 
 BuildRequires:  libxscrnsaver-devel
+BuildRequires:	libxrandr-devel
 BuildRequires:  python-devel
 BuildRequires:  python-sip
 BuildRequires:  python-dbus
