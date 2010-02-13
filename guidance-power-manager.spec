@@ -1,6 +1,6 @@
 Name:           guidance-power-manager
 Summary:        KDE power management applet
-Version:        4.3.1
+Version:        4.4.0
 Release:        %mkrel 1
 Url:            http://websvn.kde.org/trunk/extragear/utils/guidance-power-manager
 License:        GPLv2+
@@ -26,14 +26,13 @@ It is based on the powersave package and therefore supports APM and
 ACPI. See powersave package for additional features such as CPU frequency
 scaling(SpeedStep and PowerNow) and more
 
-%files
+%files -f %name.lang
 %defattr(-,root,root) 
 %_kde_bindir/guidance-power-manager
 %py_platsitedir/ixf86misc.so
 %py_platsitedir/xf86misc.py
 %_kde_appsdir/guidance-power-manager
 %_kde_datadir/autostart/guidance-power-manager.desktop
-%_kde_datadir/locale/*/LC_MESSAGES/*.mo
 
 #--------------------------------------------------------------------
 
@@ -45,7 +44,10 @@ scaling(SpeedStep and PowerNow) and more
 %make
 
 %install
-make -C build DESTDIR=%buildroot install
+rm -fr %buildroot
+%makeinstall_std -C build
+
+%find_lang %name
 
 %clean
-%{__rm} -rf "%{buildroot}"
+rm -fr %buildroot
