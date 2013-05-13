@@ -1,11 +1,10 @@
 Name:           guidance-power-manager
 Summary:        KDE power management applet
 Version:        4.4.0
-Release:        %mkrel 2
+Release:        3
 Url:            http://websvn.kde.org/trunk/extragear/utils/guidance-power-manager
 License:        GPLv2+
 Group:          Graphical desktop/KDE
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source0:        http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%{name}-%{version}.tar.bz2
 BuildRequires:  pkgconfig(xscrnsaver)
 BuildRequires:	pkgconfig(xrandr)
