@@ -7,10 +7,10 @@ License:        GPLv2+
 Group:          Graphical desktop/KDE
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source0:        http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%{name}-%{version}.tar.bz2
-BuildRequires:  libxscrnsaver-devel
-BuildRequires:	libxrandr-devel
-BuildRequires:	libxxf86vm-devel
-BuildRequires:	libx11-devel
+BuildRequires:  pkgconfig(xscrnsaver)
+BuildRequires:	pkgconfig(xrandr)
+BuildRequires:	pkgconfig(xxf86vm)
+BuildRequires:	pkgconfig(x11)
 BuildRequires:  python-devel
 BuildRequires:  python-sip
 BuildRequires:  python-dbus
