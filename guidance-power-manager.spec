@@ -6,6 +6,7 @@ Url:            https://websvn.kde.org/trunk/extragear/utils/guidance-power-mana
 License:        GPLv2+
 Group:          Graphical desktop/KDE
 Source0:        http://fr2.rpmfind.net/linux/KDE/stable/%version/src/extragear/%{name}-%{version}.tar.bz2
+BuildRequires:	make
 BuildRequires:  pkgconfig(xscrnsaver)
 BuildRequires:	pkgconfig(xrandr)
 BuildRequires:	pkgconfig(xxf86vm)
